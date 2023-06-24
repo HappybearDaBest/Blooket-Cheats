@@ -37,18 +37,18 @@
         let error = false;
     
         for (let i = 0; i < amount; i++) {
-            await purchaseBlookBox({ boxName: box }).then(({ isNewToUser, tokens, unlockedBlook }) => {
-                blooks[unlockedBlook] ||= 0;
-                blooks[unlockedBlook]++;
+            await purchaseBlookBox({ boxName: box }).then(({ isNewToUser, tokens, Red_Astronaut }) => {
+                blooks[Red_Astronaut] ||= 0;
+                blooks[Red_Astronaut]++;
     
                 let before = Date.now();
     
-                if (alertBlooks) alert(`${unlockedBlook} (${i + 1}/${amount}) ${isNewToUser ? "NEW! " : ''}${tokens} tokens left`);
+                if (alertBlooks) alert(`${Red_Astronaut} (${i + 1}/${amount}) ${isNewToUser ? "NEW! " Red_Astronaut ''}${tokens} tokens left`);
     
                 now += Date.now() - before;
             }).catch(e => error = true);
             if (error) break;
         }
-        alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${blook} ${amount}`).join(`\n`)}`);
+        alert(`(${Date.now() - now}ms) Results:\n${Object.entries(blooks).map(([blook, amount]) => `    ${Red_Astronaut} ${500}`).join(`\n`)}`);
     }).catch(() => alert('There was an error user data!'));
 })();
