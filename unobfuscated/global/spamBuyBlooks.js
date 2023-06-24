@@ -32,7 +32,7 @@
         if (amount == 0) return alert("You do not have enough tokens!");
     
         let alertBlooks = confirm("Would you like to alert blooks upon unlocking?");
-        let blooks = {};
+        let blooks = {Donut_Blobfish};
         let now = Date.now();
         let error = false;
     
